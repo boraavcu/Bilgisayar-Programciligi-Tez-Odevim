@@ -1,0 +1,360 @@
+.navbar-brand {
+    font-weight: bold;
+}
+.navbar-collapse {
+  flex-basis: 100% !important;
+  flex-grow: 1 !important;
+  align-items: center !important;
+  justify-content: end !important;
+}
+.logo {
+    margin-top: -10px;
+}
+#yukarıgit {
+  background: url(../i/backtotop.png) no-repeat center center;
+  border: 0;
+  bottom: 20px;
+  cursor: pointer;
+  display: block;
+  opacity: 1;
+  height: 70px;
+  position: fixed;
+  right: 20px;
+  text-indent: -9999px;
+  width: 70px;
+  z-index: 1;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.dropdown-container {
+  text-align: center;
+}
+
+.dropdown-container select {
+  margin-bottom: 10px;
+}
+
+.divs {
+  display: none;
+}
+
+.sectionone {
+    width: 100%;
+    height: 92.1vh;
+    align-items: center;
+    margin: auto;
+}
+.go {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goon {
+    position: absolute;
+     z-index: 5;
+     margin-top: 0px;
+     text-decoration: none;
+}
+.goon:hover {
+    text-decoration: none;
+    
+} 
+.goto {
+    width: 200px;
+}
+.goto:hover {
+    text-decoration: none;
+}
+#navk {
+    z-index: 1000000;
+}
+#navkmoobif {
+  display: none;
+}
+ /* Card ve Progress Bar Bölümü */
+ .progress {
+  width: 100%;
+  height: 10px !important;
+  background-color: #f5f5f5 !important;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ff0000 !important;
+  --progress: 0%;
+  animation: progress-animation 2s linear forwards;
+}
+.progress-bara {
+  height: 100%;
+  background-color: #00ff2a;
+  --progress: 0%;
+  animation: progress-animation 2s linear forwards;
+}
+.progress-barb {
+  height: 100%;
+  background-color: #007bff;
+  --progress: 0%;
+  animation: progress-animation 2s linear forwards;
+}
+
+
+@keyframes progress-animation {
+  from { width: 0%; }
+  to { width: var(--progress); }
+}
+
+
+  /*main*/
+  .card:hover .card-img-top {
+    height: 200px;
+    object-fit: cover;
+
+  }
+  .card:hover {
+    box-shadow: 0px 0px 10px 0px;
+  }
+  .card:not(:hover) {
+    height: 79vh;
+    background-image: url(../img/darı.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 0px 10px 0px;
+  }
+  .card.ab:not(:hover) {
+    height: 79vh;
+    background-image: url(../img/bugday.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .card.ac:not(:hover) {
+    height: 79vh;
+    background-image: url(../img/pamuk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .card.ad:not(:hover) {
+    height: 79vh;
+    background-image: url(../img/patates.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .card:not(:hover) .card-body {
+    display: none !important;
+  }
+  .card:not(:hover) .list-group {
+    display: none !important;
+  }
+  .card:not(:hover) .card-img-top {
+    display: none;
+  }
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  text-align: center;
+}
+#loading img {
+  margin-top: 20%;
+}
+@media screen and (max-width: 800px) {
+    #navkmoobif {
+        display: initial ;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 99;
+    }
+    button.navbar-toggler {
+      display: none;
+    }
+    * {
+        box-sizing: border-box;
+      }
+      a.fab-action.fab-action-1 {
+        background-color: white;
+      }
+      a.fab-action.fab-action-2 {
+        background-color: white;
+      }
+      a.fab-action.fab-action-3 {
+        background-color: white;
+      }
+      a.fab-action.fab-action-4 {
+        background-color: white;
+      }
+      .fab-wrapper {
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+      }
+      .fab-checkbox {
+        display: none;
+      }
+      .fab {
+        position: absolute;
+        bottom: -1rem;
+        right: -1rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: #FFC107;
+        box-shadow: 0px 5px 20px #81a4f1;
+        transition: all 0.3s ease;
+        z-index: 1;
+        border-bottom-right-radius: 6px;
+      }
+      
+      .fab:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .fab-checkbox:checked ~ .fab:before {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: 5%;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      /* .fab:hover {
+        background: #870ed8;
+        box-shadow: 0px 5px 20px 5px #81a4f1;
+      } */
+      
+      .fab-dots {
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        background-color: #28a745;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateX(0%) translateY(-50%) rotate(0deg);
+        opacity: 1;
+        animation: blink 3s ease infinite;
+        transition: all 0.3s ease;
+      }
+      
+      .fab-dots-1 {
+        left: 15px;
+        animation-delay: 0s;
+      }
+      .fab-dots-2 {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        animation-delay: 0.4s;
+      }
+      .fab-dots-3 {
+        right: 15px;
+        animation-delay: 0.8s;
+      }
+      
+      .fab-checkbox:checked ~ .fab .fab-dots {
+        height: 6px;
+      }
+      
+      .fab .fab-dots-2 {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+      }
+      
+      .fab-checkbox:checked ~ .fab .fab-dots-1 {
+        width: 32px;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      }
+      .fab-checkbox:checked ~ .fab .fab-dots-3 {
+        width: 32px;
+        border-radius: 10px;
+        right: 50%;
+        transform: translateX(50%) translateY(-50%) rotate(-45deg);
+      }
+      
+      @keyframes blink {
+        50% {
+          opacity: 0.25;
+        }
+      }
+      
+      .fab-checkbox:checked ~ .fab .fab-dots {
+        animation: none;
+      }
+      
+      .fab-wheel {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: none;
+        width: 10rem;
+        height: 10rem;
+        transition: all 0.3s ease;
+        transform-origin: bottom right;
+        transform: scale(0);
+      }
+      
+      .fab-checkbox:checked ~ .fab-wheel {
+        transform: scale(1);
+      }
+      .fab-action {
+        position: absolute;
+        background: #13410f;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #28a745;
+        box-shadow: 0 0.1rem 1rem rgba(24, 66, 154, 0.82);
+        transition: all 1s ease;
+      
+        opacity: 0;
+      }
+      
+      .fab-checkbox:checked ~ .fab-wheel .fab-action {
+        opacity: 1;
+      }
+      
+      .fab-action:hover {
+        background-color: #f16100;
+      }
+      
+      .fab-wheel .fab-action-1 {
+        right: -1rem;
+        top: 0;
+      }
+      
+      .fab-wheel .fab-action-2 {
+        right: 3.4rem;
+        top: 0.5rem;
+      }
+      .fab-wheel .fab-action-3 {
+        left: 0.5rem;
+        bottom: 3.4rem;
+      }
+      .fab-wheel .fab-action-4 {
+        left: 0;
+        bottom: -1rem;
+      }
+      
+    
+  }
+ 

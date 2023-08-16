@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <script src="../js/loading.js"></script>
+    <script src="../js/head.js"></script>
+    <script src="../js/common.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/cardiçerikleri.css" type="text/css">
+</head>
+<body style="background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);">
+
+  <!-- N A V B A R  -->
+  <nav id="navk" class="navbar navbar-expand-lg navbar-light" style="background-color: #f79433;
+  background-image: linear-gradient(90deg, #f79433 0%, #f1c32d 100%);">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html" target="_blank"><img class="logo" src="../i/sdtar_png_logo.png" alt="" width="30"> SDTAR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Giriş Sayfası</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../app.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item"> 
+                  <a class="nav-link" href="../nav/uygulama.html">Harita</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+<div class="row" style="scale: 0.9;">
+
+  <div class="col-3">
+  <div class="card" style="width: 19rem;">
+    <img src="../img/darı.png" class="card-img-top" alt="Darı Resmi" >
+    <div class="card-body">
+      <h5 class="card-title">MISIR</h5>
+      <p class="card-text">Yüksek verimlilik nedeniyle tarımın vazgeçilmezi olan <b>mısır</b>, çeşitli kullanım alanlarıyla öne çıkar.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Bölgedeki Yetiştirilme Oranı
+        <div class="progress">
+          <div class="progress-bar" style="--progress: 21.6%;" onmouseover="göster1()" onmouseout="gizle1()"></div>
+        </div> 
+        <p id="yetiş1" style="display: none;">2.947.335 Ton</p>
+      </li>
+      <li class="list-group-item">Ortalama Hasat Süresi
+        <div class="progress">
+          <div class="progress-bara" style="--progress: 30%;" onmouseover="göster2()" onmouseout="gizle2()"></div>
+        </div>
+        <p id="hasat1" style="display: none;">110 Gün</p>
+      </li>
+      <li class="list-group-item">Ortalama Su İhtiyacı
+        <div class="progress">
+          <div class="progress-barb" style="--progress: 65%;" onmouseover="göster3()" onmouseout="gizle3()"></div>
+        </div>
+        <p id="su1" style="display: none;">650 mm</p>
+      </li>
+    </ul>
+    <div class="card-body">
+      <a href="../tabs/bolge_p7.html" target="_parent"><button class="btn btn-success w-100 " type="button">Daha Fazlası</button></a>
+    </div>
+  </div>
+
+</div>
+
+<div class="col-3 ">
+  <div class="card ab" style="width: 19rem;">
+    <img src="../img/bugday.png" class="card-img-top" alt="Buğday Resmi">
+    <div class="card-body">
+      <h5 class="card-title">BUĞDAY</h5>
+      <p class="card-text">İnsanlığın temel gıda bileşeni olan <b>buğday</b>, geniş kullanım alanlarına ve besleyici özelliklere sahiptir.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Bölgedeki Yetiştirilme Oranı
+        <div class="progress">
+          <div class="progress-bar" style="--progress: 8.1%;" onmouseover="göster1()" onmouseout="gizle1()"></div>
+        </div>
+        <p id="yetiş2" style="display: none;">1.136.023 Ton</p>
+      </li>
+      <li class="list-group-item">Ortalama Hasat Süresi
+        <div class="progress">
+          <div class="progress-bara" style="--progress: 65%;" onmouseover="göster2()" onmouseout="gizle2()"></div>
+        </div>
+        <p id="hasat2" style="display: none;">240 Gün</p>
+      </li>
+      <li class="list-group-item">Ortalama Su İhtiyacı
+        <div class="progress">
+          <div class="progress-barb" style="--progress: 45%;" onmouseover="göster3()" onmouseout="gizle3()"></div>
+        </div>
+        <p id="su2" style="display: none;">450 mm</p>
+      </li>
+    </ul>
+    <div class="card-body">
+      <a href="../tabs/bolge_p7.html" target="_parent"><button class="btn btn-success w-100 " type="button">Daha Fazlası</button></a>
+      
+    </div>
+  </div>
+
+</div>
+<div class="col-3">
+  <div class="card ac" style="width: 19rem;">
+    <img src="../img/pamuk.png" class="card-img-top" alt="Pamuk Resmi" >
+    <div class="card-body">
+      <h5 class="card-title">PAMUK</h5>
+      <p class="card-text">En çok kullanılan ve üretilen doğal lif kaynaklarından olan <b>pamuk</b> aynı zamanda tekstil endüstrisininde vazgeçilmezidir.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Bölgedeki Yetiştirilme Oranı
+        <div class="progress">
+          <div class="progress-bar" style="--progress: 27.2%;" onmouseover="göster1()" onmouseout="gizle1()"></div>
+        </div>
+        <p id="yetiş3" style="display: none;">225.484 Ton</p>
+      </li>
+      <li class="list-group-item">Ortalama Hasat Süresi
+        <div class="progress">
+          <div class="progress-bara" style="--progress: 44%;" onmouseover="göster2()" onmouseout="gizle2()"></div>
+        </div>
+        <p id="hasat3" style="display: none;">160 Gün</p>
+      </li>
+      <li class="list-group-item">Ortalama Su İhtiyacı
+        <div class="progress">
+          <div class="progress-barb" style="--progress: 70%;" onmouseover="göster3()" onmouseout="gizle3()"></div>
+        </div>
+        <p id="su3" style="display: none;">700 mm</p>
+      </li>
+    </ul>
+    <div class="card-body">
+      <a href="../tabs/bolge_p7.html" target="_parent"><button class="btn btn-success w-100 " type="button">Daha Fazlası</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="col-3">
+  <div class="card ad" style="width: 19rem;">
+    <img src="../img/patates.png" class="card-img-top" alt="Patates Resmi" >
+    <div class="card-body">
+      <h5 class="card-title">PATATES</h5>
+      <p class="card-text">Kolay depolanan ve uzun süre taze kalabilen <b>patates</b>, insan beslenmesinde önemli bir yere sahiptir.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Bölgedeki Yetiştirilme Oranı
+        <div class="progress">
+          <div class="progress-bar" style="--progress: 7.4%;" onmouseover="göster1()" onmouseout="gizle1()"></div>
+        </div>
+        <p id="yetiş4" style="display: none;">683.070 Ton</p>
+      </li>
+      <li class="list-group-item">Ortalama Hasat Süresi
+        <div class="progress">
+          <div class="progress-bara" style="--progress: 30%;" onmouseover="göster2()" onmouseout="gizle2()"></div>
+        </div>
+        <p id="hasat4" style="display: none;">110 Gün</p>
+      </li>
+      <li class="list-group-item">Ortalama Su İhtiyacı
+        <div class="progress">
+          <div class="progress-barb" style="--progress: 60%;" onmouseover="göster3()" onmouseout="gizle3()"></div>
+        </div>
+        <p id="su4" style="display: none;">600 mm</p>
+      </li>
+    </ul>
+    <div class="card-body">
+      <a href="../tabs/bolge_p7.html" target="_parent"><button class="btn btn-success w-100 " type="button">Daha Fazlası</button></a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src="../js/progressbilgi.js"></script>
+
+<button class="back-button" onclick="goBack()">Haritaya Geri Dön</button>
+
+  <script>
+
+      function goBack() {
+          window.history.back();
+      }
+
+  </script>
+
+<div id="loading">
+  <img src="../i/loading.gif" alt="Loading..." width="150" />
+</div>
+
+</body>
+</html>
